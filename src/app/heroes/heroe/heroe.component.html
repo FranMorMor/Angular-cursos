@@ -1,0 +1,39 @@
+<!-- <h1>Heroe component Works</h1>;-->
+<h1>{{nombre}}</h1>;
+
+<!--<dl> representa una lista descriptiva. 
+    El elemento encierra una lista de grupos 
+    de términos (especificados con el uso del 
+    elemento <dt> ) y de descripciones 
+    (proveídas con elementos <dd></dd> 
+
+    El elemento dl representa una lista de 
+    descripciones. Estas listas, que agrupan 
+    nombres ( dt ) y valores ( dd ), pueden 
+    ser utilizadas con diferentes propósitos 
+    como preguntas y respuestas, glosarios, 
+    listas de vocabulario, etc.
+-->
+<dl>
+    <td> Nombre: </td>
+    <dd> {{nombre}}</dd>
+
+    <td> Edad: </td>
+    <dd> {{edad}}</dd>
+
+    <td> Función: </td>
+    <dd> {{obtenerNombre()}}</dd>
+
+    <td> Capitalizado: </td>
+    <dd> {{ nombreCapitalizado }} </dd>
+<!--<dd> {{ nombre.toUpperCase() }}</dd> -->
+</dl>
+
+<button (click)="cambiarNombre()">
+    Cambiar Héroe
+</button>
+
+<button (click)="cambiarEdad()">
+    Cambiar Edad
+</button>
+
